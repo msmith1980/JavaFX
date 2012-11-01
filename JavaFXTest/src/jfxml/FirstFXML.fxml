@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml" fx:controller="jfxml.FirstFXMLController">
+  <children>
+    <StackPane layoutX="14.0" layoutY="14.0" prefHeight="328.0" prefWidth="386.0">
+      <children>
+        <TableView fx:id="people" prefHeight="200.0" prefWidth="200.0" StackPane.alignment="TOP_LEFT" />
+      </children>
+    </StackPane>
+    <HBox id="HBox" alignment="CENTER" layoutX="22.0" layoutY="357.0" spacing="5.0">
+      <children>
+        <Button fx:id="load" mnemonicParsing="false" onAction="#handleLoadAction" text="Load" />
+        <Button fx:id="edit" mnemonicParsing="false" text="Edit" />
+        <Button mnemonicParsing="false" text="Button" />
+      </children>
+    </HBox>
+  </children>
+</AnchorPane>
