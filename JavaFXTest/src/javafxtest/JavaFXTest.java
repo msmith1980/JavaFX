@@ -22,6 +22,7 @@ public class JavaFXTest extends Application {
        final Parent parent;
         parent = FXMLLoader.load(FirstFXMLController.class.getResource("FirstFXML.fxml"));
        primaryStage.setScene(new Scene(parent));
+       primaryStage.setTitle("Contacts FX");
        primaryStage.show();
     }
 

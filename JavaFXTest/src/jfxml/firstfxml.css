@@ -5,3 +5,12 @@
 .mainFxmlClass {
 
 }
+
+.hostStyle{
+    -fx-background-color: lightgray;
+    -fx-font-family: sans-serif;
+}
+
+.button{
+    -fx-font-family: 'arial black';
+}
