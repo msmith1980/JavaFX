@@ -5,6 +5,7 @@
 package jfxml;
 
 import data.Model.Person;
+import data.Model.dataAccess.PersonRepository;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +29,8 @@ import javafx.scene.layout.AnchorPane;
  */
 public class FirstFXMLController implements Initializable {
 
+    private PersonRepository repository;
+    
     @FXML
     private Button load;
     @FXML
@@ -54,7 +57,7 @@ public class FirstFXMLController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-        
+        repository = new PersonRepository();
     }
 
     private ObservableList<Person> getPeople() {
