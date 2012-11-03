@@ -4,6 +4,8 @@
  */
 package javafxtest;
 
+import com.sun.glass.ui.Screen;
+import com.sun.glass.ui.Window;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -19,11 +21,13 @@ public class JavaFXTest extends Application {
     
     @Override
     public void start(final Stage primaryStage) throws Exception {
-       final Parent parent;
+        final Parent parent;
         parent = FXMLLoader.load(FirstFXMLController.class.getResource("FirstFXML.fxml"));
-       primaryStage.setScene(new Scene(parent));
-       primaryStage.setTitle("Contacts FX");
-       primaryStage.show();
+        primaryStage.setHeight(Screen.getMainScreen().getHeight());
+        primaryStage.setWidth(Screen.getMainScreen().getWidth());
+        primaryStage.setScene(new Scene(parent));
+        primaryStage.setTitle("Contacts FX");
+        primaryStage.show();
     }
 
     /**

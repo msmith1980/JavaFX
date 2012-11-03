@@ -14,3 +14,7 @@
 .button{
     -fx-font-family: 'arial black';
 }
+
+body{
+    background-color: lightgray;
+}

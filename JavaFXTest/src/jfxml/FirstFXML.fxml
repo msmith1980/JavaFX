@@ -6,13 +6,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
+<?import javafx.scene.web.*?>
 <?scenebuilder-stylesheet firstfxml.css?>
 
-<AnchorPane id="AnchorPane" fx:id="host" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="hostStyle" xmlns:fx="http://javafx.com/fxml" fx:controller="jfxml.FirstFXMLController">
+<AnchorPane id="AnchorPane" fx:id="host" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-1.0" minWidth="-1.0" prefHeight="768.0" prefWidth="1024.0" styleClass="hostStyle" xmlns:fx="http://javafx.com/fxml" fx:controller="jfxml.FirstFXMLController">
   <children>
-    <StackPane layoutX="14.0" layoutY="14.0" prefHeight="328.0" prefWidth="386.0">
+    <StackPane layoutX="14.0" layoutY="14.0" prefHeight="328.0" prefWidth="340.0">
       <children>
-        <TableView fx:id="people" prefHeight="200.0" prefWidth="200.0" StackPane.alignment="TOP_LEFT" />
+        <TableView fx:id="people" prefHeight="328.0" prefWidth="286.0" StackPane.alignment="TOP_LEFT" />
       </children>
     </StackPane>
     <HBox id="HBox" alignment="CENTER" layoutX="22.0" layoutY="357.0" spacing="5.0">
@@ -26,6 +27,7 @@
         <Button mnemonicParsing="false" text="Button" />
       </children>
     </HBox>
+    <WebView fx:id="localWeb" layoutX="363.0" layoutY="14.0" prefHeight="328.0" prefWidth="447.0" />
   </children>
   <stylesheets>
     <URL value="@firstfxml.css" />
